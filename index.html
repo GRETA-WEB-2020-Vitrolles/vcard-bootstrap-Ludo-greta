@@ -8,18 +8,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Vcard</title>
+    <title>Ludovic Dedieu Vcard</title>
     <style>
-      .container{
-        max-width:600px;
-      }
-      header,.btn-dark{
-        background-color:black;
-      }
+
       div{
         border:1px dashed red
 
       }
+
+      header, .btn-dark {
+       background-color: black;
+     }
+     header .container {
+       box-shadow: 0 0 5rem rgba(255, 255, 255, 0.5) !important;
+     }
+     header .logo {
+       width: 150px;
+     }
+
+     a {
+       color: darkblue;
+     }
+     .text-sm {
+       font-size: 0.75rem;
+     }
+     .btn-dark:hover {
+       opacity: .75;
+     }
+
+     .container {
+       max-width: 600px;
+     }
+     .svg-inline--fa:not(.fa-2x) {
+       font-size: 1.5em;
+     }
+
     </style>
   </head>
   <body>
@@ -52,7 +75,7 @@
       </div>
 
     </header>
-
+    <main>
     <div class="container">
       <div class="row">
         <div class="col-2 text-center">
@@ -76,7 +99,7 @@
           <span>
             <a href="tel:0630704376">07 70 18 93 73</a>
             <br>
-            <em>Mobile</em>
+            <em class="text-sm">Mobile</em>
           </span>
         </div>
       </div>
@@ -91,7 +114,7 @@
               ludovic.dedieu13@gmail.com
             </a>
             <br>
-            <em>E-mail</em>
+            <em class="text-sm">E-mail</em>
           </span>
         </div>
       </div>
@@ -127,7 +150,7 @@
           <span>
             <a href="#">Mon site web</a>
             <br>
-            <em> Portfolio(en développement)</em>
+            <em class="text-sm"> Portfolio(en développement)</em>
           </span>
         </div>
       </div>
@@ -156,6 +179,23 @@
       <hr class="w-50">
     </div>
 
+   </main>
+   <footer>
+      <div class="container py-3">
+        <div class="p-0 mx-5 my-4">
+          <a href="#" class=" btn btn-primary w-100 ">
+            <span class="fas fa-file-download mr-4"></span>
+            <span class="text-uppercase m-0">Télécharger VCARD</span>
+          </a>
+        </div>
+        <div class=" p-0 mx-5 my-4">
+          <a href="#" class=" btn btn-dark w-100 " >
+            <span class="fas fa-share-alt mr-4"></span>
+            <span class="text-uppercase m-0">Partager cette page</span>
+          </a>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
